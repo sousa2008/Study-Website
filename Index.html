@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site visando a facilitação do estudo">
+    <meta name="author" content="Lucas">
+    <link rel="stylesheet" href="style.css">
+    <title>Site de estudos</title>
+</head>
+<body>
+    <header>
+        <div class="cabeçalho">
+            <h1 class="title">Acompanhamento de estudos</h1>
+        </div>
+    </header>
+    <main>
+        <div>
+            <div class="introdução">
+                <h2>SEJA BEM VINDO!</h2>
+                <p>Nós te auxiliaremos na sua organização de seus estudos.</p>
+            </div>
+            <!--Cards de conteúdo: -->
+            <div class="conjuntos">
+                <!--Card de resumo:-->
+                <div class="card">
+                    <h2 class="card-title">Resumo:</h2>
+                    <p>Aqui está o <strong>resumo</strong> de tudo o que você já realizou:</p>
+                    <p>Atividades concluídas: <bold class="statisc">0/6</bold>
+                    </p>
+                    <p>Progresso: <bold class="statisc">0%</bold>
+                    </p>
+                    <p>Atividade mais recente: <bold class="statisc">Matemática</bold>
+                    </p>
+                    <p>maior sequência de atividades feitas: <bold class="statisc">0</bold>
+                    </p>
+                </div>
+                <!--Card de tarefas:-->
+                <div class="card">
+                    <h2 class="card-title">Lista de tarefas:</h2>
+                    <p>Dê um <strong>check</strong> nas atividades já realizadas por você.</p>
+                    <input type="checkbox" id="a1" name="a1" value="TCC">
+                    <label for="a1">TCC</label><br>
+                    <input type="checkbox" id="a2" name="a2" value="Seminário">
+                    <label for="a2">Seminário</label><br>
+                    <input type="checkbox" id="a3" name="a3" value="Provas">
+                    <label for="a3">Provas</label><br>
+                    <input type="checkbox" id="a4" name="a4" value="Atividades em classe">
+                    <label for="a4">Atividades em classe</label><br>
+                    <input type="checkbox" id="a5" name="a5" value="ExtraCurrículares">
+                    <label for="a5">ExtraCurrículares</label><br>
+                </div>
+                <!--Card de agenda:-->
+                <div class="card">
+                    <h2 class="card-title">Agenda:</h2>
+                    <p>Veja suas <strong>próximas</strong> tarefas:</p>
+                    <p><bold class="statisc">06/06</bold> - Prova de matemática</p>
+                    <p><bold class="statisc">12/06</bold> - Atividade de inglês</p>
+                    <p><bold class="statisc">06/06</bold> - Projeto Front-end</p>
+                    <p><bold class="statisc">06/06</bold> - TCC</p>
+
+                </div>
+            </div>
+            <div class="areacard">
+                    <h2 class="card-title">Adicione sua tarefa:</h2>
+                    <label for="name">Nome da tarefa:</label>
+                    <input type="text" name="name" id="name" placeholder="Digite a matéria"><br>
+                    <label for="data">Digite o prazo de entrega:</label>
+                    <input type="date" name="data" id="data" placeholder="Digite a data"><br>
+                    <button>Adicionar atividade</button>
+            </div>
+
+    </main>
+</body>
+</html>

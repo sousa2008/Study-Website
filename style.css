@@ -1,0 +1,143 @@
+
+:root{
+    --color-primary: #5f84ff;
+    --color-secundary: #25d164;   /* verde suave */
+    --color-bg: #F8FAFC;
+    --color-black: #000;
+    --color-white:#FFFFFF;
+    --border-site: 0.2rem solid #a3f7c2f3; 
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 15px;
+    color: #1E293B;
+}
+body{
+    background-color: var(--color-white);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title{
+font-size: 30px;
+color: var(--color-white);
+background-color: var(--color-primary);
+text-align: center;
+padding: 1.5rem;
+border-bottom: var(--border-site)
+}
+
+.introdução{
+    display: flex;
+    flex-direction: row;
+    text-align: baseline;
+    justify-content: space-between;
+    padding-bottom: 1.4rem;
+}
+.introdução h2{
+    color: var(--color-secundary);
+    word-spacing: 2px;
+    font-size: 35px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.introdução p{
+    color: var(--color-black);
+    padding-right: 25rem;
+    margin-top: 21px;
+    text-decoration: solid;
+    font-size: 19px;
+}
+
+.conjuntos{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.statisc {
+    color: var(--color-secundary);
+    padding: 0.1rem;
+
+
+}
+.card{
+    background-color: var(--color-white);
+    padding: 15px;
+    padding-top: 1rem;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: var(--border-site);
+    width: 450px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-title{
+    text-align: center;
+    word-spacing: 0.1rem;
+    color: var(--color-primary);
+    font-size: 25px;
+    margin-bottom: 10px;
+    padding: 0.5rem;
+}
+
+.card-title:hover{
+    font-size: 25px;
+    text-decoration: underline solid var(--color-primary);
+}
+
+.card strong{
+    color:var(--color-secundary);
+    font-size: 20px;
+
+}
+
+input[type="checkbox"] {
+    accent-color: var(--color-secundary);
+    cursor: pointer;
+}
+
+.areacard{
+    background-color: var(--color-bg);
+    padding: 50px;
+    padding-top: 1rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    border-radius: 15px;
+    border: var(--border-site);
+    width: 1000px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.areacard label{
+    font-size: 18px;
+    color: var(--color-primary);
+    padding-top: 8rem;
+}
+
+.areacard input{
+    color: var(--color-black);
+    background-color: transparent;
+    border: var(--border-site);
+    border-radius: 10px;
+    width: 500px;
+    margin-top: 2rem ;
+    margin-left: 2rem;
+}
+
+.areacard button{
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    font-size: 20px;
+    width: 700px 700px;
+    padding: 1rem;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
