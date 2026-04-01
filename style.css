@@ -47,10 +47,53 @@ border-bottom: var(--border-site)
 
 .introdução p{
     color: var(--color-black);
-    padding-right: 25rem;
+    padding-right: 22rem;
     margin-top: 21px;
     text-decoration: solid;
     font-size: 19px;
+}
+.cardlogin{
+    background-color: var(--color-white);
+    padding: 15px;
+    padding-top: 1rem;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: var(--border-site);
+    width: 450px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.cardlogin label{
+    font-size: 18px;
+    color: var(--color-primary);
+    padding-top: 2rem;
+}
+
+.cardlogin input{
+    color: var(--color-black);
+    text-indent: 5px;
+    background-color: transparent;
+    border: var(--border-site);
+    border-radius: 10px;
+    width: 200px;
+    margin-top: 1.5rem;
+}
+
+.cardlogin button{
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    font-size: 20px;
+    width: 500px 500px;
+    padding: 0.5rem;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.mensagemErro{
+    text-align: center;
+    font-size: 17px;
+    padding: 0.1rem;
+    margin-top: 1rem;
 }
 
 .conjuntos{
@@ -77,6 +120,7 @@ border-bottom: var(--border-site)
     width: 450px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
+
 
 .card-title{
     text-align: center;

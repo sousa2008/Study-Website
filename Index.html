@@ -18,9 +18,19 @@
     <main>
         <div>
             <div class="introdução">
-                <h2>SEJA BEM VINDO!</h2>
+                <h2 id="visitante">SEJA BEM VINDO, visitante</h2>
                 <p>Nós te auxiliaremos na sua organização de seus estudos.</p>
             </div>
+            <center>
+                <div class="cardlogin">
+                    <h2 class="card-title">Login: </h2>
+                    <p>Antes de começarmos, se identifique.</p>
+                    <label for="usuario">Nome:</label>
+                    <input type="text" name="usuario" id="usuario" placeholder="Digite seu nome: "><br>
+                    <p id="mensagemErro" class="mensagemErro"></p>
+                    <button onClick="mudarNome()">Adicionar nome</button>
+                </div>
+            </center>
             <!--Cards de conteúdo: -->
             <div class="conjuntos">
                 <!--Card de resumo:-->
@@ -72,5 +82,6 @@
             </div>
 
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
