@@ -12,7 +12,7 @@ function mudarNome (){
         mensagemErro.style.color = "red"
     }  
     else {  //Código para quando o nome for válido
-        document.getElementById("visitante").textContent = "SEJA BEM VINDO, " + novoNome
+        document.getElementById("visitante").textContent = "SEJA BEM VINDO, " + novoNome + "!"
         mensagemErro.textContent = "Nome atualizado com sucesso!" 
         mensagemErro.style.color = 'green'
         usuario.value = " " // Limpar o campo de input após a atualização do nome   
@@ -21,18 +21,19 @@ function mudarNome (){
 
 function adicionartarefa(){
     // ler a tarefa que o usuário digitar
-    let materia = document.getElementById("materia")
+    const materia = document.getElementById("materia")
     let novaTarefa = materia.value
     
-    let data = document.getElementById("data")
+    const data = document.getElementById("data")
     let novaData = data.value
     
     // Declarar o paragrafo de erro 
-    let mensagemErro2 = document.getElementById("mensagemErro2")
+    const mensagemErro2 = document.getElementById("mensagemErro2")
     
     
     if (novaTarefa.trim() === "" || novaData.trim() === "") {
         mensagemErro2.textContent = "Digite uma matéria válida!"
+        mensagemErro2.style.color = "red"
     }
     else {
     //Craindo cada parte que sera adicionada na lista de tarefas
@@ -46,16 +47,17 @@ function adicionartarefa(){
     lista.appendChild(checkbox) // Adicionar o checkbox à tarefa
     lista.appendChild(span) // Adicionar o texto da tarefa ao elemento de lista
     // Adicionar o elemento de lista à lista de tarefas
-    let listaTarefas = document.getElementById("listaTarefas")
+    const listaTarefas = document.getElementById("listaTarefas")
     listaTarefas.appendChild(lista)
 
-    /* lista para adcionar data junto (esperando aprender mais para poder fazer)
+    //lista para adcionar data junto (esperando aprender mais para poder fazer)
     let lista2 = document.createElement('li')
     lista2.textContent = novaData + " - " + novaTarefa
-    let listaDatas = document.getElementById("listaDatas")
-    listaDatas.appendChild(lista2) */
+    const listaDatas = document.getElementById("listaDatas")
+    listaDatas.appendChild(lista2) 
     
     mensagemErro2.textContent = "Atividade adicionada com sucesso!"
+    mensagemErro2.style.color = "green"
     usuario.value = " "
 }
 
