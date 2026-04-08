@@ -1,4 +1,5 @@
 
+/* parte geral e presets */
 :root{
     --color-primary: #5f84ff;
     --color-secundary: #25d164;   /* verde suave */
@@ -7,7 +8,6 @@
     --color-white:#FFFFFF;
     --border-site: 0.2rem solid #a3f7c2f3; 
 }
-
 *{
     margin: 0px;
     padding: 0px;
@@ -18,17 +18,18 @@ body{
     background-color: var(--color-white);
     font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Cabeçalho e sumário */
 .sumario{
     background-color: var(--color-white);
-    align-self: flex-end;
-    padding: 6px;
+    padding: 3%;
     padding-top: 1rem;
     margin-top: 10px;
     border-radius: 10px;
     border: var(--border-site);
-    width: 200px;
+    width: 100%;
+    height: 50px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    justify-content: flex-end;
 }
 
 .sumariolink{
@@ -36,7 +37,8 @@ body{
     color: var(--color-black);
     font-size: 18px;
     display: flex;
-    padding: 0.5rem;
+    margin-left: 39rem;;
+    text-decoration: none;
 }
 .title{
 font-size: 30px;
@@ -71,6 +73,8 @@ border-bottom: var(--border-site)
     text-decoration: solid;
     font-size: 19px;
 }
+
+/* Card de login */
 .cardlogin{
     background-color: var(--color-white);
     padding: 15px;
@@ -115,6 +119,7 @@ border-bottom: var(--border-site)
     margin-top: 1rem;
 }
 
+/* Cards de informações */
 .conjuntos{
     display: flex;
     flex-direction: row;
@@ -139,7 +144,6 @@ border-bottom: var(--border-site)
     width: 450px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
-
 
 .card-title{
     text-align: center;
@@ -166,6 +170,17 @@ input[type="checkbox"] {
     cursor: pointer;
 }
 
+li.tarefa{
+    color: var(--color-black);
+    font-size: 18px;
+    margin-top: 3px;
+}
+
+.checkbox{
+    margin-right: 10px;
+
+}
+/* Card de adicionar tarefas */
 .areacard{
     background-color: var(--color-bg);
     padding: 50px;
@@ -212,4 +227,22 @@ input[type="checkbox"] {
     margin-top: 1.8rem;
 }
 
+/* sumário final (rodapé) */
+.sumariofim{
+    background-color: var(--color-white);
+    margin: 0 auto;
+    margin-top: 20px;
+    border: var(--border-site);
+    width: 100%;
+    height: 90px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
 
+.sumariolinkfim{
+    margin-left: 39rem;
+    color: var(--color-black);
+    font-size: 15px;
+    display: flex;
+    padding: 0.5rem;
+    text-decoration: none;
+}
