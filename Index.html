@@ -55,16 +55,6 @@
                     <h2 class="card-title">Lista de tarefas:</h2>
                     <p>Dê um <strong>check</strong> nas atividades já realizadas por você.</p>
                     <ul id="listaTarefas">
-                        <input type="checkbox" id="a1" name="a1" value="TCC">
-                        <label for="a1">TCC</label><br>
-                        <input type="checkbox" id="a2" name="a2" value="Seminário">
-                        <label for="a2">Seminário</label><br>
-                        <input type="checkbox" id="a3" name="a3" value="Provas">
-                        <label for="a3">Provas</label><br>
-                        <input type="checkbox" id="a4" name="a4" value="Atividades em classe">
-                        <label for="a4">Atividades em classe</label><br>
-                        <input type="checkbox" id="a5" name="a5" value="ExtraCurrículares">
-                        <label for="a5">ExtraCurrículares</label><br>
                     <ul>
                 </div>
                 <!--Card de agenda:-->
@@ -72,10 +62,6 @@
                     <h2 class="card-title">Agenda:</h2>
                     <p>Veja suas <strong>próximas</strong> tarefas:</p>
                     <ul id="listaDatas">
-                        <p><bold class="statisc">06/06</bold> - Prova de matemática</p>
-                        <p><bold class="statisc">12/06</bold> - Atividade de inglês</p>
-                        <p><bold class="statisc">06/06</bold> - Projeto Front-end</p>
-                        <p><bold class="statisc">06/06</bold> - TCC</p>
                     </ul>
 
                 </div>
@@ -87,10 +73,11 @@
                     <label for="data">Digite o prazo de entrega:</label>
                     <input type="date" name="data" id="data" placeholder="Digite a data"><br>
                     <p id="mensagemErro2" class="mensagemErro2"></p><br>
-                    <button onclick="adicionartarefa()">Adicionar atividade</button>
+                    <button onclick="adicionartarefa()" class="adicionar">Adicionar atividade</button>
+                    <button onclick="limparTudo ()" class="limpar">Limpar lista</button>
             </div>
             <div class="sumariofim">
-                <h2 class="card-title">Sumário:</h2>
+                <h2 class="card-title-fim">Sumário:</h2>
                 <a href="#visitante"><p class="sumariolinkfim" >Voltar ao login</p></a>
             </div>
     </main>

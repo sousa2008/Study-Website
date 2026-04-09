@@ -6,6 +6,7 @@
     --color-bg: #F8FAFC;
     --color-black: #000;
     --color-white:#FFFFFF;
+    --color-red: #ff4d4d;
     --border-site: 0.2rem solid #a3f7c2f3; 
 }
 *{
@@ -123,8 +124,8 @@ border-bottom: var(--border-site)
 .conjuntos{
     display: flex;
     flex-direction: row;
-    gap: 20px;
-    max-width: 1000px;
+    gap: 30px;
+    max-width: 1250px;
     margin: 0 auto;
 }
 
@@ -149,14 +150,9 @@ border-bottom: var(--border-site)
     text-align: center;
     word-spacing: 0.1rem;
     color: var(--color-primary);
-    font-size: 25px;
+    font-size: 30px;
     margin-bottom: 10px;
     padding: 0.5rem;
-}
-
-.card-title:hover{
-    font-size: 25px;
-    text-decoration: underline solid var(--color-primary);
 }
 
 .card strong{
@@ -177,8 +173,7 @@ li.tarefa{
 }
 
 .checkbox{
-    margin-right: 10px;
-
+    margin-right: 3px;
 }
 /* Card de adicionar tarefas */
 .areacard{
@@ -210,7 +205,7 @@ li.tarefa{
     text-indent: 5px;
 }
 
-.areacard button{
+.adicionar{
     color: var(--color-white);
     background-color: var(--color-primary);
     font-size: 20px;
@@ -218,7 +213,20 @@ li.tarefa{
     padding: 1rem;
     margin-top: 30px;
     cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
+
+.limpar{
+    color: var(--color-white);
+    background-color: var(--color-red);
+    font-size: 20px;
+    width: 700px 700px;
+    padding: 1rem;
+    margin-top: 30px;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
 
 .mensagemErro2{
     text-align: center;
@@ -227,22 +235,53 @@ li.tarefa{
     margin-top: 1.8rem;
 }
 
+.botaoEditar{
+    size: 7px;
+    margin: 0.3rem;
+    font-size: 13px;
+    background-color: var(--color-secundary);
+    color: var(--color-white);
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.botaoExcluir{
+    size: 7px;
+    margin: 0.3rem;
+    font-size: 13px;
+    background-color: var(--color-red);
+    color: var(--color-white);
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
 /* sumário final (rodapé) */
 .sumariofim{
     background-color: var(--color-white);
-    margin: 0 auto;
     margin-top: 20px;
     border: var(--border-site);
-    width: 100%;
+    width: 110%;
     height: 90px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
+.card-title-fim{
+    text-align: center;
+    word-spacing: 0.1rem;
+    color: var(--color-primary);
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-right: 130px;
+    padding: 0.5rem;
+}
 .sumariolinkfim{
-    margin-left: 39rem;
+    margin-left: 41rem;
     color: var(--color-black);
     font-size: 15px;
     display: flex;
     padding: 0.5rem;
     text-decoration: none;
 }
+
