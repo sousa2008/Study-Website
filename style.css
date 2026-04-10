@@ -1,9 +1,10 @@
 
 /* parte geral e presets */
 :root{
-    --color-primary: #5f84ff;
-    --color-secundary: #25d164;   /* verde suave */
-    --color-bg: #F8FAFC;
+    --color-primary: #4F6EF7;
+    --color-secundary: #22C55E;
+    --color-bg: #F1F5F9;
+    --color-text: #1E293B;
     --color-black: #000;
     --color-white:#FFFFFF;
     --color-red: #ff4d4d;
@@ -16,29 +17,29 @@
     color: #1E293B;
 }
 body{
-    background-color: var(--color-white);
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color-bg);
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: var(--color-text);
 }
 
+.page{  /* Padronizar medidas do site*/
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
 /* Cabeçalho e sumário */
 .sumario{
     background-color: var(--color-white);
-    padding: 3%;
-    padding-top: 1rem;
-    margin-top: 10px;
+    padding: 5px;
     border-radius: 10px;
     border: var(--border-site);
-    width: 100%;
-    height: 50px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .sumariolink{
-    text-align: center;
-    color: var(--color-black);
+    color: var(--color-text);
     font-size: 18px;
-    display: flex;
-    margin-left: 39rem;;
+    text-align: center;
     text-decoration: none;
 }
 .title{
@@ -68,8 +69,8 @@ border-bottom: var(--border-site)
 }
 
 .introdução p{
-    color: var(--color-black);
-    padding-right: 22rem;
+    color: var(--color-text);
+    padding-right: 17rem;
     margin-top: 21px;
     text-decoration: solid;
     font-size: 19px;
@@ -83,7 +84,6 @@ border-bottom: var(--border-site)
     margin-top: 20px;
     border-radius: 10px;
     border: var(--border-site);
-    width: 450px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
@@ -123,22 +123,18 @@ border-bottom: var(--border-site)
 /* Cards de informações */
 .conjuntos{
     display: flex;
-    flex-direction: row;
-    gap: 30px;
-    max-width: 1250px;
-    margin: 0 auto;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; /* Quebra linha automaticamente*/
 }
 
 .statisc {
     color: var(--color-secundary);
     padding: 0.1rem;
-
-
 }
 .card{
     background-color: var(--color-white);
     padding: 15px;
-    padding-top: 1rem;
     margin-top: 20px;
     border-radius: 10px;
     border: var(--border-site);
@@ -150,7 +146,8 @@ border-bottom: var(--border-site)
     text-align: center;
     word-spacing: 0.1rem;
     color: var(--color-primary);
-    font-size: 30px;
+    font-size: 24px;
+    font-weight: 600;
     margin-bottom: 10px;
     padding: 0.5rem;
 }
@@ -161,6 +158,7 @@ border-bottom: var(--border-site)
 
 }
 
+/*aba de checkbox*/
 input[type="checkbox"] {
     accent-color: var(--color-secundary);
     cursor: pointer;
@@ -175,16 +173,19 @@ li.tarefa{
 .checkbox{
     margin-right: 3px;
 }
+
+.tarefaConcluida {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
 /* Card de adicionar tarefas */
 .areacard{
-    background-color: var(--color-bg);
+    background-color: var(--color-white);
     padding: 50px;
-    padding-top: 1rem;
-    margin: 0 auto;
-    margin-top: 2rem;
     border-radius: 15px;
+    margin-top: 20px;
     border: var(--border-site);
-    width: 1000px;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
 }
 
@@ -262,8 +263,6 @@ li.tarefa{
     background-color: var(--color-white);
     margin-top: 20px;
     border: var(--border-site);
-    width: 110%;
-    height: 90px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
@@ -271,16 +270,14 @@ li.tarefa{
     text-align: center;
     word-spacing: 0.1rem;
     color: var(--color-primary);
-    font-size: 30px;
-    margin-bottom: 10px;
-    margin-right: 130px;
+    font-size: 24px;
+    font-weight: 600;
     padding: 0.5rem;
 }
 .sumariolinkfim{
-    margin-left: 41rem;
-    color: var(--color-black);
-    font-size: 15px;
-    display: flex;
+    color: var(--color-text);
+    font-size: 18px;
+    text-align: center;
     padding: 0.5rem;
     text-decoration: none;
 }
