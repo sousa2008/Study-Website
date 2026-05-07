@@ -206,6 +206,17 @@ li.tarefa{
     text-indent: 5px;
 }
 
+.areacard select{
+    color: var(--color-black);
+    background-color: transparent;
+    border: var(--border-site);
+    border-radius: 10px;
+    width: 500px;
+    margin-top: 2rem ;
+    margin-left: 2rem;
+    text-indent: 5px;
+}
+
 .adicionar{
     color: var(--color-white);
     background-color: var(--color-primary);

@@ -41,13 +41,13 @@
                 <div class="card">
                     <h2 class="card-title">Resumo:</h2>
                     <p>Aqui está o <strong>RESUMO</strong> de tudo o que você já realizou:</p>
-                    <p>Atividades concluídas: <strong class="statisc">0/6</strong>
+                    <p>Atividades concluídas: <strong class="statisc" id="cont">0/0</strong>
                     </p>
-                    <p>Progresso: <strong class="statisc">0%</strong>
+                    <p>Progresso: <strong class="statisc" id="progresso">0%</strong>
                     </p>
-                    <p>Atividade mais recente: <strong class="statisc">Matemática</strong>
+                    <p>Atividade adicionada mais recentemente: <strong class="statisc" id="recente"> - </strong>
                     </p>
-                    <p>maior sequência de atividades feitas: <strong class="statisc">0</strong>
+                    <p>Categoria de atividades mais feitas: <strong class="statisc" id="categoria"> - </strong>
                     </p>
                 </div>
                 <!--Card de tarefas:-->
@@ -71,8 +71,17 @@
                     <input type="text" name="materia" id="materia" placeholder="Digite a matéria"><br>
                     <label for="data">Digite o prazo de entrega:</label>
                     <input type="date" name="data" id="data" placeholder="Digite a data"><br>
+                    <label for="menu">Escolha a categoria:</label>
+                    <select name="menu" id="menu">
+                        <option value="0" class="0">Selecione a categoria</option>
+                        <option value="Exatas">Exatas</option>
+                        <option value="Humanas">Humanas</option>
+                        <option value="Biologicas">Biológicas</option>
+                        <option value="Tecnicas">Técnicas</option>
+                        <option value="Casa">De casa</option>
+                    </select><br>
                     <p id="mensagemErro2" class="mensagemErro2"></p><br>
-                    <button onclick="adicionartarefa()" class="adicionar">Adicionar atividade</button>
+                    <button onclick="adicionartarefa()" class="adicionar" id="btn_add">Adicionar atividade</button>
                     <button onclick="limparTudo ()" class="limpar">Limpar lista</button>
             </div>
             <div class="sumariofim">
