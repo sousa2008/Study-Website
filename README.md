@@ -1,4 +1,4 @@
-# 🌐 Projeto Web (HTML, CSS e Java)
+# 🌐 Projeto Web (HTML, CSS e JavaScript)
 
 Projeto desenvolvido para praticar conceitos de desenvolvimento web que aprendo por conta própria e na faculdade.
 
@@ -9,7 +9,7 @@ Ele simula um site de estudos e,a cada versão, ficamais funcional
 ## 🛠️ Tecnologias utilizadas
 - HTML
 - CSS
-- Java
+- JavaScript
 
 ## 📚 Aprendizados
 - Estruturação de páginas com HTML
@@ -20,5 +20,11 @@ Ele simula um site de estudos e,a cada versão, ficamais funcional
 ## ▶️ Como visualizar
 Abra o arquivo `index.html` no navegador.
 
+## 📸 Preview
+![Gameplay](/gifs/apresentacao.gif)
+
 ## 📈 Evolução
 Projeto em constante melhoria conforme avanço nos estudos.
+- Mecânicas DOM
+- LocalStorage
+- Interação com usuário

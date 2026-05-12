@@ -139,8 +139,6 @@ function exibirTarefas(){
 
         // Adicionando todo o agrupamento feito na linha dentro da aba lista
         listaTarefas.appendChild(lista)
-
-
 }
 }
 
@@ -221,13 +219,13 @@ function atualizarContador(){
 
 function tarefaRecente(){
     const recente = document.getElementById("recente")
-    if (concluidas.filter(Boolean).length == 0){
-        recente.textContent = " - "  
+        if (concluidas.filter(Boolean).length == 0){
+            recente.textContent = " - "  
+        }
+        else {
+            recente.textContent = concluidas == true[concluidas.length - 1] //se as tarefas concluidas forem diferentes de 0, recebe a última da array
+        }
     }
-    else {
-        recente.textContent = tarefas[tarefas.length - 1] //se as tarefas concluidas forem diferentes de 0, recebe a última da array
-    }
-}
 
 function progresso(){
     const progresso = document.getElementById("progresso")
